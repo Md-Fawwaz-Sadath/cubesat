@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CubeSat Project</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap and Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero" data-aos="fade">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">CubeSat</h1>
+      <h2 class="hero-subtitle">Simulating Satellite Systems</h2>
+      <p class="hero-text">Explore how this miniature satellite works</p>
+      <a href="#about" class="btn btn-glow">Learn More</a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="container my-5 py-5" id="about">
+    <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">About the Project</h2>
+    <div class="row align-items-center">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+        <div class="about-content">
+          <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">This CubeSat prototype is designed for educational use, providing hands-on experience with satellite technology and space systems.</p>
+          <ul class="feature-list">
+            <li class="feature-item" data-aos="fade-right" data-aos-delay="300">
+              <span class="feature-icon"><i class="fas fa-satellite"></i></span>
+              <span>Real-time data collection and analysis</span>
+            </li>
+            <li class="feature-item" data-aos="fade-right" data-aos-delay="400">
+              <span class="feature-icon"><i class="fas fa-broadcast-tower"></i></span>
+              <span>Advanced wireless communication system</span>
+            </li>
+            <li class="feature-item" data-aos="fade-right" data-aos-delay="500">
+              <span class="feature-icon"><i class="fas fa-chart-line"></i></span>
+              <span>Environmental monitoring capabilities</span>
+            </li>
+            <li class="feature-item" data-aos="fade-right" data-aos-delay="600">
+              <span class="feature-icon"><i class="fas fa-microchip"></i></span>
+              <span>Integrated sensor array for precise measurements</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+        <div class="image-container" data-aos="zoom-in" data-aos-delay="200">
+          <img 
+            src="cubeschematic.png" 
+            alt="CubeSat Schematic" 
+            class="img-fluid rounded shadow-lg schematic-image" 
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Section -->
+  <section class="container my-5 py-5" id="components">
+    <h2 class="section-title" data-aos="fade-up">Core Components</h2>
+    <div class="row g-4 components-container">
+      <div class="col-md-4">
+        <div class="component-card">
+          <div class="card-body text-center">
+            <i class="fas fa-microchip component-icon"></i>
+            <h5 class="card-title">ESP32</h5>
+            <p class="card-text">Main processor handling data acquisition and wireless transmission with integrated Wi-Fi capabilities.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="component-card">
+          <div class="card-body text-center">
+            <i class="fas fa-microchip component-icon"></i>
+            <h5 class="card-title">Arduino Mega</h5>
+            <p class="card-text">Secondary processor for LED visualization and data reception, with extensive I/O capabilities.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="component-card">
+          <div class="card-body text-center">
+            <i class="fas fa-thermometer-half component-icon"></i>
+            <h5 class="card-title">BMP280</h5>
+            <p class="card-text">High-precision environmental sensor for atmospheric pressure and temperature measurements.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="component-card">
+          <div class="card-body text-center">
+            <i class="fas fa-compass component-icon"></i>
+            <h5 class="card-title">MPU6050</h5>
+            <p class="card-text">6-axis motion tracking device combining accelerometer and gyroscope for precise orientation data.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="component-card">
+          <div class="card-body text-center">
+            <i class="fas fa-satellite component-icon"></i>
+            <h5 class="card-title">NEO-6M GPS</h5>
+            <p class="card-text">High-performance positioning module providing accurate location and timing data.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="component-card">
+          <div class="card-body text-center">
+            <i class="fas fa-camera component-icon"></i>
+            <h5 class="card-title">OV7670 Camera</h5>
+            <p class="card-text">Low-power VGA camera module for image capture and visual data processing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Operations Section -->
+  <section class="container my-5 py-5" id="operations">
+    <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Operations</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="operation-step" data-aos="fade-right" data-aos-duration="800">
+          <div class="operation-icon">
+            <i class="fas fa-satellite-dish"></i>
+          </div>
+          <div class="operation-content">
+            <h4>Data Collection</h4>
+            <p>Advanced sensor array continuously monitors environmental parameters and satellite orientation in real-time.</p>
+          </div>
+        </div>
+        <div class="operation-step" data-aos="fade-right" data-aos-duration="800">
+          <div class="operation-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <div class="operation-content">
+            <h4>Image Processing</h4>
+            <p>Captures and processes visual data using advanced algorithms for enhanced image quality and analysis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="operation-step" data-aos="fade-left" data-aos-duration="800">
+          <div class="operation-icon">
+            <i class="fas fa-broadcast-tower"></i>
+          </div>
+          <div class="operation-content">
+            <h4>Wireless Transmission</h4>
+            <p>Utilizes secure protocols for reliable data transmission and remote command reception.</p>
+          </div>
+        </div>
+        <div class="operation-step" data-aos="fade-left" data-aos-duration="800">
+          <div class="operation-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <div class="operation-content">
+            <h4>LED Visualization</h4>
+            <p>Dynamic LED display system provides real-time status updates and system diagnostics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center footer-content">
+        <div class="col-md-6">
+          <p class="copyright-text">&copy; 2025 CubeSat Project. All rights reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="social-links">
+            <a href="https://github.com/memkr-lab/CubeSat/" class="social-link" aria-label="GitHub" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/abdul-hannan-794706224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-link" aria-label="LinkedIn" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="Hanafiabdulhannan@gmail.com" class="social-link" aria-label="Email" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
